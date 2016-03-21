@@ -2,34 +2,28 @@
 <html lang="zh-cmn-Hans">
 <head>
 <meta http-equiv="cotent-type" content="text/html" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<title>半桶水科技</title>
 <style type="text/css">
-/*统一初始化CSS*/
-	body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,
-	form,fieldset,legend,button,input,textarea,th,td,section,p,span,font,div{margin:0;padding:0;font-family:"Microsoft yahei";color:#333;}
-	body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53;}
-	h1,h2,h3,h4,h5,h6{font-size:100%;}
-	address,cite,dfn,em,var{font-style:normal;}
-	code,kbd,pre,samp{font-family:"Microsoft yahei";}
-	small{font-size:12px;}
-	ul,ol{list-style:none;}
-	a{text-decoration:none;color: #333;}
-	a:hover{text-decoration: underline;}
-	sup{vertical-align:text-top;}
-	sub{vertical-align:text-bottom;}
-	legend{color:#000;}
-	fieldset,img{border:0;}
-	button,input,select,textarea{font-size:100%;}
-	table{border-collapse:collapse;border-spacing:0;}
-/*统一主要CSS*/
-.main{margin:0px auto}
-.headerBox{}
+body{background-color:#1F1F1F;}
+.wrap{margin:0px auto;
+		width:1280px; }
+#header{background-color: #333333;
+		color: #eee;
+		overflow: hidden;}
+#header nav{float: right;}
+#header h1{float: left;}
+nav li{display: inline-block;}
+nav li>a{color: #eee;}
+#mainbody{background-color: #DEDEDE}
+article{background-color: #FFFFFF;}
+aside{background-color: #FFFFFF;}
 </style>
 </head>
 <body>
-<div class="main">
-<header>
-	<h1>网站一级标题-半桶水科技</h1>
+<div class="wrap">
+<header id="header">
+	<h1>半桶水科技</h1>
 	<nav>
 		<ul>
 			<li><a href="##">导航链接一</a></li>
@@ -39,7 +33,7 @@
 		</ul>
 	</nav>
 </header>
-<section>
+<section id="mainbody">
 	<article>
 	<hgroup>
 		<h2>文章一级标题</h2>
@@ -53,7 +47,7 @@
 		这是一个很长很长的段落，这是一个很长很长的段落，<a href="##">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里是粗体字</b>
 		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
 		<figure>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
 		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，<a href="##" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落.
@@ -71,7 +65,7 @@
 			这是一个很长很长的段落，这是一个很长很长的段落，<a href="##">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里是粗体字</b>
 			这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
 		<figure>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 			<ul>
 				<li>列表项目一</li>
@@ -83,43 +77,43 @@
 	<h2>图片</h2>
 		<figure>
 		<figcaption>好看的图片</figcaption>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 		<figure>
 		<figcaption>好看的图片</figcaption>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 		<figure>
 		<figcaption>好看的图片</figcaption>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 		<figure>
 		<figcaption>好看的图片</figcaption>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 		<figure>
 		<figcaption>好看的图片</figcaption>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 		<figure>
 		<figcaption>好看的图片</figcaption>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 		<figure>
 		<figcaption>好看的图片</figcaption>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 		<figure>
 		<figcaption>好看的图片</figcaption>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 		<figure>
 		<figcaption>好看的图片</figcaption>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 		<figure>
 		<figcaption>好看的图片</figcaption>
-		<img src="img.png" alt="这是一幅图片" title="这是一幅图片">
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
 		</figure>
 	</article>
 	<article>
@@ -174,7 +168,6 @@
 			</form>
 		</div>
 	</article>
-</section>
 <aside>
 	<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
 	<h3>侧栏注册窗口标题</h3>
@@ -216,6 +209,8 @@
 			</p>
 		</form>
 </aside>
+</section>
+
 <footer>版权所有&copy;</footer>
 </div>
 </body>
