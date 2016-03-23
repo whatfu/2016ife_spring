@@ -5,24 +5,132 @@
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<title>半桶水科技</title>
 <style type="text/css">
-body{background-color:#1F1F1F;}
-.wrap{margin:0px auto;
-		width:1280px; }
-#header{background-color: #333333;
+body{background-color:#1F1F1F; font-family:"Microsoft Yahei",SimHei,SimSun;font-size: 16px; margin: 0px;}
+.wrap{
+		margin:0px auto;
+		width:1280px; 
+		}
+@media (max-width: 1280px){.wrap{
+		margin:0px auto;
+		width:100%; 
+		}
+	}
+#header{
+		background-color: #333333;
 		color: #eee;
-		overflow: hidden;}
-#header nav{float: right;}
+		overflow: hidden;
+		position: relative;
+		}
+#header nav{position: absolute;
+			right: 0;
+			margin-right: 20px;
+		}
 #header h1{float: left;}
-nav li{display: inline-block;}
-nav li>a{color: #eee;}
-#mainbody{background-color: #DEDEDE}
-article{background-color: #FFFFFF;}
-aside{background-color: #FFFFFF;}
+nav ul{
+		list-style: none;
+		counter-reset: count;
+		}
+nav li{
+		float: left;
+      	margin-left: 5px;
+     	list-style-position: inside;
+     	}
+nav li:before{
+		content:"● ";
+		color: black;
+		}
+nav li>a{
+		color: #eee;
+		font-size: 12px;
+		text-decoration: none;
+		font-weight: bold;
+		}
+#mainbody{
+		background-color: #DEDEDE;
+		padding:20px ;
+		}
+article{
+		background-color: #FFFFFF;
+		margin-bottom: 20px;
+		border: 1px solid #CDCDCD;
+		padding: 20px 20px 40px 20px;
+		font-size: 0.875rem;
+		box-shadow: 2px 2px 1px #666;
+		}
+article>p{
+		text-indent: 2rem;
+		font-size: 0.938rem;
+		line-height: 1.75em;
+		}
+article h3{color: gray;}
+
+article span.author,time{
+			color: gray;
+			font-size: 0.75rem;
+		}
+article>ul{list-style: none;}
+article li{list-style-position: inside;
+			line-height: 1.75em;}
+figure{
+	width: 100px;
+	padding:10px;
+	border: 1px solid #CECECE;
+	text-align: center;
+}
+
+figure img{ width: 100%;
+		}
+table{
+		width: 100%;
+ 		border-collapse: collapse;	
+ 	}
+table td{border:1px solid #CDCDCD;}
+thead {background-color: #333333; 
+		color: #fff;}
+
+tfoot{
+	background-color: #CDCDCD;
+	font-weight: bold;
+	}
+aside{
+		background-color: #FFFFFF;
+		border:1px solid #CDCDCD;
+		padding: 0px 20px ;
+		font-size: 0.875rem;
+		box-shadow: 2px 2px 1px #666;
+	}
+aside h2{border-left: 3px #ccc solid;
+		line-height: 2em;}
+aside form>div{margin: 10px 0px;} 
+.input-title{width: 30%;
+			text-align: right;
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: top;}
+tips{margin-left: 30%;
+	color: #cecece;
+	padding-left: 10px;}
+aside textarea{height: 100px; width: 60% }
+button{width: 100%;
+		background-color: #3355D0;
+		border:none;
+		padding: 10px;
+		border-radius: 5px;
+		color: #fff;}
+footer{
+		text-align: center;
+		color: #fff;
+		background-color: #000;
+		padding: 20px;
+		font-size: 0.75rem;
+	}
+
 </style>
 </head>
 <body>
 <div class="wrap">
 <header id="header">
+
 	<h1>半桶水科技</h1>
 	<nav>
 		<ul>
@@ -39,34 +147,33 @@ aside{background-color: #FFFFFF;}
 		<h2>文章一级标题</h2>
 		<h3>文章二级标题</h3>
 	</hgroup>
-		<p><span class="author">文章作者</span> <time>文章发表时间</time></p>
-		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+		<span class="author">文章作者</span> <time>文章发表时间</time>
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
 		<br>
 		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
 		<br>
 		这是一个很长很长的段落，这是一个很长很长的段落，<a href="##">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里是粗体字</b>
-		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
-		<figure>
-		<img src="images/images/img.png" alt="这是一幅图片" title="这是一幅图片">
-		</figure>
+		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+		
+		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
+		<p>
 		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
-		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，<a href="##" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落.
+		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，<a href="##" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落.</p>
 	</article>
 	<article>
 		<hgroup>
-			<h2>文章一级标题</h2>
+			<h2>另外一篇文章一级标题</h2>
 			<h3>文章二级标题</h3>
 		</hgroup>
-			<p><span class="author">文章作者</span> <time>文章发表时间</time></p>
-			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+			<span class="author">文章作者</span> <time>文章发表时间</time>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
 			<br>
 			这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
 			<br>
 			这是一个很长很长的段落，这是一个很长很长的段落，<a href="##">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里是粗体字</b>
-			这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
-		<figure>
+			这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+		
 		<img src="images/img.png" alt="这是一幅图片" title="这是一幅图片">
-		</figure>
 			<ul>
 				<li>列表项目一</li>
 				<li>列表项目二</li>
@@ -121,19 +228,18 @@ aside{background-color: #FFFFFF;}
 		<h2>最后一篇文章一级标题</h2>
 		<h3>文章二级标题</h3>
 	</hgroup>
-		<p>
+		
 			<span class="author">文章作者</span> 
 			<time>文章发表时间</time>
-		</p>
+		
 		<ol>
 			<li>排名1</li>
 			<li>排名2</li>
 			<li>排名3</li>
 		</ol>
-		<div>
-			<p>下面是一个表格,给表格加了一个border="1"好让你看出是一个表格</p>
-			
-			<table border="1">
+
+			<table>
+			<caption style="text-align:left;">下面是一个表格,给表格加了一个border="1"好让你看出是一个表格</caption>
 				<thead>
 					<tr>
 						<td>表头</td>
@@ -143,18 +249,18 @@ aside{background-color: #FFFFFF;}
 				</thead>
 				<tbody>
 					<tr>
-						<td>表内单元格</td>
-						<td>表内单元格</td>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
 						<td><a href="##">操作</a></td>
 					</tr>
 					<tr>
-						<td>表内单元格</td>
-						<td>表内单元格</td>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
 						<td><a href="##">操作</a></td>
 					</tr>
 					<tr>
-						<td>表内单元格</td>
-						<td>表内单元格</td>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
 						<td><a href="##">操作</a></td>
 					</tr>
 				</tbody>
@@ -165,46 +271,64 @@ aside{background-color: #FFFFFF;}
 					</tr>
 				</tfoot>
 			</table>
-			</form>
-		</div>
+			
+		
 	</article>
 <aside>
 	<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-	<h3>侧栏注册窗口标题</h3>
+	
 		<form method="post" action="##">
-			<p>
+			<div><div class="input-title">
 				<label for="email">请输入邮箱地址：</label>
+				</div>
 				<input id="email" type="email" placeholder="这是一个文本输入框" name="email" />
-			</p>
-			<p>邮箱地址请按要求格式输入</p>
-			<p>
+			</div>
+			<tips>邮箱地址请按要求格式输入</tips>
+			<div>
+			<div class="input-title">
 			<label for="password1">请输入密码：</label>
+			</div>
 			<input id="password1" type="password" placeholder="这是一个文本输入框" name="password" />
+			</div>
+			<div>
+			<div class="input-title">
 			<label for="password2">请重复输入密码:</label>
+			</div>
 			<input id="password2" type="password" placeholder="这是一个文本输入框" name="password" />
-			</p>
+			</div>
 
-			<p>密码请为6-16位英文数字</p>
-			<p>
-				<span>性格:</span>
+			<tips>密码请为6-16位英文数字</tips>
+			<div>
+				<div class="input-title">性格:</div>
 					<input id="male" type="radio" value="男" name="sex"/><label for="male">男</label>
 					<input id="female" type="radio" value="女" name="sex"/><label for="female">女</label>
+				</div>
+				<div>
+				<div class="input-title">
 				<label for="city">城市：</label>
+				</div>
 					<select name="city" id="city">
 					<option value="北京">北京</option>
 					<option value="上海">上海</option>
 					<option value="广州">广州</option>
 					<option value="深圳">深圳</option>
 					</select>
-				<span>爱好:</span>
+					</div>
+					<div>
+				<div class="input-title">爱好:</div>
 					<input id="sport" type="checkbox" name="sport" value="运动">
 					<label for="sport">运动</label>
 					<input id="air" type="checkbox" name="air" value="艺术">
 					<label for="air">艺术</label>
 					<input id="science" type="checkbox" name="science" value="科学">
 					<label for="science">科学</label>
+					</div>
+					<div>
+				<div class="input-title">
 				<label for="profile">个人描述:</label>
+				</div>
 					<textarea id="profile" name="Profile" rows="1" cols="20">这是一个多行输入框，输入您的个人描述</textarea>
+					</div>
 				<button type="submit" value="确认提交">确认提交</button>
 			</p>
 		</form>
