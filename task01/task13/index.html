@@ -7,16 +7,24 @@
 <body>
 	<label>请输入北京今天空气质量：<input id="aqi-input" type="text">
 	</label>
-	<button id="button" onclick="skyValue()">确认填写</button>
+	<button id="button" >确认填写</button>
 
 	<div>请输入值是：<span id="aqi-display">尚无录入</span></div>
 
 	<script type="text/javascript">
-function skyValue() {
-	var aqi_input = document.getElementById("aqi-input");
-	var aqi_display =document.getElementById("aqi-display");
-	aqi_display.firstChild.nodeValue =aqi_input.value;
-}
+		
+		var aqi_input = document.getElementById("aqi-input");
+		var aqi_display =document.getElementById("aqi-display");
+		var aqi_btn =document.getElementById("button");
+		function upDateDisplay() {
+			aqi_display.innerText=parseFloat(aqi_input.value);
+		}
+		button.onClick = upDateDisplay;
+		aqi_input.onKeyUp = function (evt) {
+			if (evt.keyCode == 13) {
+				upDateDisplay();
+			}
+		}
 	</script>
 </body>
 </html>
