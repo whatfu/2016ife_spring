@@ -16,13 +16,12 @@
 		var aqi_input = document.getElementById("aqi-input");
 		var aqi_display =document.getElementById("aqi-display");
 		var aqi_btn =document.getElementById("button");
-		function upDateDisplay() {
-			aqi_display.innerText=parseFloat(aqi_input.value);
-		}
-		button.onClick = upDateDisplay;
-		aqi_input.onKeyUp = function (evt) {
+		aqi_btn.onclick = function () {
+
+		};
+		aqi_input.onkeyup = function (evt) {
 			if (evt.keyCode == 13) {
-				upDateDisplay();
+				aqi_display.innerHTML=parseFloat(aqi_input.value);
 			}
 		}
 	</script>
