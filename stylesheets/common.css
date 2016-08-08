@@ -51,7 +51,7 @@ body, html {
 **********************************************************************/
 .main-wrapper{
 	min-width: 1180px;
-	background-image: url('../images/Distant.jpg');
+	background-image: url('https://ooo.0o0.ooo/2016/08/08/57a83a457ab80.jpg');
 	background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -258,6 +258,12 @@ body, html {
 						letter-spacing: 1px;
 						line-height: 1.2em;
 					}
+					.card p a{
+						font-size: 16px;
+						letter-spacing: 1px;
+						line-height: 1.2em;
+						color: #F34949;
+					}
 					.card:nth-child(1)
 					{
 						background: rgba(0,0,0,0.05);
@@ -281,6 +287,14 @@ body, html {
 					.card:nth-child(6)
 					{
 						background: rgba(0,0,0, 0.30);
+					}
+					.card:nth-child(7)
+					{
+						background: rgba(0,0,0, 0.35);
+					}
+					.card:nth-child(8)
+					{
+						background: rgba(0,0,0, 0.40);
 					}
 		footer.footer-wraaper{
 			height: 680px;
