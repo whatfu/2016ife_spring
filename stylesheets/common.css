@@ -25,7 +25,9 @@ img{
 }
 a {
   outline: none;
-  text-decoration: none; }
+  text-decoration: none; 
+  /*! display: block; */
+}
 
 a:link, a:visited {
   color: #005D65; }
@@ -56,6 +58,7 @@ body, html {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    overflow: hidden;
 }
 .public-header{
 	width: 100%;
@@ -375,3 +378,57 @@ body, html {
 				position: relative;
 				top: 250px;
 			}
+		aside#sidebar{
+			position: fixed;
+			top: 0;
+			right: -300px;
+			bottom: 0;
+			width: 300px;
+			background: #333;
+			color: #fff;
+			transition:right .5s;
+		}
+			aside#sidebar ul{
+				list-style: none;
+				
+				/*! margin: 0; */
+				padding: 0;
+			}
+			aside#sidebar ul a{
+				display: inline-block;
+				padding: 10px 30px;
+				color: #fff;
+				width: 100%;
+			}
+				aside#sidebar ul a:hover{
+					background: #444;
+				}
+			.mask
+			{
+				display: none;
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				background: rgba(0,0,0,0.4);
+			}
+	#pagetop {
+	    position: absolute;
+	    left: 0px;
+	    top: 0px;
+	    z-index: 0;
+		}
+	#btn_pagetop {
+	    position: fixed;
+	    right: 30px;
+	    bottom: 30px;
+	    z-index: 100;
+	    margin: 0;
+	    background: transparent;
+	    border: none;
+	}
+	#btn_pagetop .ancor{
+		opacity: 1;
+		display: block;
+	}
